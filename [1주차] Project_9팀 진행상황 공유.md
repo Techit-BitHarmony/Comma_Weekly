@@ -85,6 +85,6 @@
 
 ---
 
-Github Repository URL: https://github.com/Techit-BitHarmony/Comma
-Notion : https://www.notion.so/9-4ee8e96c7a2d4c79ba7799897a1f1352
-Trello : https://trello.com/invite/b/E1ayx7TG/ATTI479a7a496bf7cc3fb60944c256cac1803778C523/9th-ideaboard
+- Github Repository URL: https://github.com/Techit-BitHarmony/Comma
+- Notion : https://www.notion.so/9-4ee8e96c7a2d4c79ba7799897a1f1352
+- Trello : https://trello.com/invite/b/E1ayx7TG/ATTI479a7a496bf7cc3fb60944c256cac1803778C523/9th-ideaboard
