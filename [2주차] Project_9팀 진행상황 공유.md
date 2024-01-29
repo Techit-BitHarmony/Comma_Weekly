@@ -49,7 +49,7 @@
 - ncp 관련 이슈 해결 중</br>
 #### 김용욱
 - ci/cd 관련 진행
-- do등
+- docker & github action & 배포 관련 진행 
 #### 박상혁
 - 타임리프로 충전/내역/출금 기능 구현(branch : credit)했다가 RESP API(branch : credit_1)로 다시 개발 중
 - 크레딧 충전 - 충전 주문 조회, 토스페이먼츠 연동, 결제 및 결제 성공시 로직
