@@ -38,6 +38,7 @@
     - quartz 라이브러리를 사용하기 위한 설정 추가
     - job, jobDetail, trigger 파일 추가
     - 정기후원을 스케줄러에 등록하는 서비스 레이어 추가
+    - 스케줄러가 사용할 데이터를 저장하기 위해 donation regular 엔티티 추가
 #### 박상혁
 - 결제 기능 TossPaymentsServcie로 분리, 메서드 분리
 - Member 필드 연동하여 인증 관련 로직 추가
@@ -49,8 +50,6 @@
 - NCP Cloud function에서 Encoding 상태 callback을 전달 받아 처리 (Redis Pub/Sub)
     - 이벤트 내용 Publish하여 Redis에 전달
     - 클라이언트 측에서 Subscribe를 해두고 Event 발생 시 SEE 방식을 통해 Client에서 인코딩 정보를 받아 볼 수 있도록 구현
-(인코딩 진행이 안되는 이슈가 있어 해결 필요 / 2024-01-27 해결, 트러블 슈팅에 정리)
-- 오디오 스트리밍 관련 이슈 해결 준비 중  
 #### 문창현
 - refresh token을 이용한 access token 재발급 구현
 - Redis를 사용하여 refresh token 구현 및 저장
@@ -69,8 +68,8 @@
         - 이 프로젝트에서는 특정일에 후원기능이 실행 될 수 있게 cron표현식을 이용해 구현을 하였음
     - 마지막으로 scheduler가 jobDetail과 trigger를 매개변수로 받아서 schedule을 등록함. 스케줄의 수정,삭제 기능을 추가할 예정
     - joblistener를 설정하여 각 job, trigger, schedule이 실행 되기 전, 중, 후에 로그를 출력하거나 추가 로직을 설정할 수 도 있다.
-- - Callback 요청을 받기 위한 방법?
-    - [localhost](http://localhost) 상태로는 ncp에서 보내는 callback을 받을 수 없었기에 서버를 띄우거나 하는 방법이 필요했다.
+- NCP CloudFunction의 Callback 요청을 받기 위한 방법?
+    - localhost 상태로는 ncp에서 보내는 callback을 받을 수 없었기에 서버를 띄우거나 하는 방법이 필요했다.
     - ngrok 서비스를 이용하여 테스트를 진행할 수 있었다.
 - Encoding 상태를 전달하기 위해 어떤 방법을 사용할까?
     - Short Polling
